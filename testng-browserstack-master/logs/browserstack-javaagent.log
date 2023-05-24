@@ -30,3 +30,12 @@
 13:01:12.230 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/11a9cb8839d07475909635224bae6936e96321b4
 13:01:12.230 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
 13:01:12.753 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+15:26:23.139 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+15:26:23.190 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+15:26:27.144 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+15:26:34.958 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+15:27:52.332 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/eohboxanzwgbfspccwmsbmveca8xwfn8n0qz2rsp to view build report, insights, and many more debugging information all at one place!
+
+15:27:55.197 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/418203d5a363a047a393fd7e4847fa4b0fb27a38
+15:27:55.197 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+15:27:55.323 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.

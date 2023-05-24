@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cross_Platform" class="navigator-link">
-              <span class="suite-name border-passed">Cross-Platform</span>
+              <span class="suite-name border-failed">Cross-Platform</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cross_Platform" class="hide-methods failed suite-Cross_Platform"> (hide)</a> <!-- hide-methods failed suite-Cross_Platform -->
+                      <a href="#" panel-name="suite-Cross_Platform" class="show-methods failed suite-Cross_Platform"> (show)</a> <!-- show-methods failed suite-Cross_Platform -->
+                    </span>
+                    <div class="method-list-content failed suite-Cross_Platform">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart1">addProductToCart1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart1">addProductToCart1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart1">addProductToCart1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cross_Platform -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +153,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cross_Platform" class="panel Cross_Platform">
+          <div class="suite-Cross_Platform-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.BStackDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart1">
+                  </a> <!-- addProductToCart1 -->
+                  <span class="method-name">addProductToCart1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart1">
+                  </a> <!-- addProductToCart1 -->
+                  <span class="method-name">addProductToCart1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart1">
+                  </a> <!-- addProductToCart1 -->
+                  <span class="method-name">addProductToCart1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Platform-class-failed -->
           <div class="suite-Cross_Platform-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -229,24 +309,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addProductToCart')
+data.setCell(0, 1, 'addProductToCart1')
 data.setCell(0, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(0, 3, 10564);
+data.setCell(0, 3, 11344);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addProductToCart')
 data.setCell(1, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(1, 3, 10314);
+data.setCell(1, 3, 10780);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductToCart')
+data.setCell(2, 1, 'addProductToCart1')
 data.setCell(2, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(2, 3, 6224);
+data.setCell(2, 3, 9959);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addProductToCart')
+data.setCell(3, 2, 'com.browserstack.BStackDemoTest')
+data.setCell(3, 3, 9502);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addProductToCart')
+data.setCell(4, 2, 'com.browserstack.BStackDemoTest')
+data.setCell(4, 3, 7867);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addProductToCart1')
+data.setCell(5, 2, 'com.browserstack.BStackDemoTest')
+data.setCell(5, 3, 5796);
 window.suiteTableData['Cross_Platform']= { tableData: data, tableDiv: 'times-div-Cross_Platform'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Cross_Platform">
               </div> <!-- times-div-Cross_Platform -->
             </div> <!-- times-div -->
@@ -287,27 +379,69 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">7106 ms</span>
+                <span class="method-start">8513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">11170 ms</span>
+                <span class="method-start">9631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductToCart1</span>
+                <span class="method-start">25597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">13531 ms</span>
+                <span class="method-start">27031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductToCart1</span>
+                <span class="method-start">29657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17592 ms</span>
+                <span class="method-start">31618 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20102 ms</span>
+                <span class="method-start">39729 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41970 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25560 ms</span>
+                <span class="method-start">42018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductToCart1</span>
+                <span class="method-start">56184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">69717 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.072 sec - in TestSuite
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 73.698 sec <<< FAILURE! - in TestSuite
+addProductToCart1(com.browserstack.BStackDemoTest)  Time elapsed: 1.747 sec  <<< FAILURE!
+java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+
+addProductToCart1(com.browserstack.BStackDemoTest)  Time elapsed: 9.96 sec  <<< FAILURE!
+java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+
+addProductToCart1(com.browserstack.BStackDemoTest)  Time elapsed: 11.344 sec  <<< FAILURE!
+java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
+	at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
+
