@@ -1,86 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T17:50:12 IST" name="Cross-Platform" finished-at="2023-05-24T17:51:43 IST" duration-ms="91091">
+  <suite started-at="2023-05-24T18:18:57 IST" name="Cross-Platform" finished-at="2023-05-24T18:20:27 IST" duration-ms="89801">
     <groups>
     </groups>
-    <test started-at="2023-05-24T17:50:12 IST" name="BStackDemo-0" finished-at="2023-05-24T17:51:08 IST" duration-ms="56264">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-24T17:50:12 IST" name="setUp" finished-at="2023-05-24T17:50:21 IST" duration-ms="9255" status="PASS">
+    <test started-at="2023-05-24T18:18:57 IST" name="BStackDemo-2" finished-at="2023-05-24T18:19:28 IST" duration-ms="31354">
+      <class name="com.browserstack.environmenttest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@de18f63]" started-at="2023-05-24T18:18:57 IST" name="setUp" finished-at="2023-05-24T18:19:12 IST" duration-ms="15504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-24T17:50:21 IST" name="addProductToCart" finished-at="2023-05-24T17:50:31 IST" duration-ms="9918" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@de18f63]" started-at="2023-05-24T18:19:12 IST" name="addProductToCart" finished-at="2023-05-24T18:19:25 IST" duration-ms="13115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-24T17:50:35 IST" name="tearDown" finished-at="2023-05-24T17:50:38 IST" duration-ms="3076" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.environmenttest@de18f63]" started-at="2023-05-24T18:19:26 IST" name="tearDown" finished-at="2023-05-24T18:19:28 IST" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-      <class name="com.browserstack.environmenttest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@6d4c273c]" started-at="2023-05-24T17:50:38 IST" name="setUp" finished-at="2023-05-24T17:50:50 IST" duration-ms="11931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@6d4c273c]" started-at="2023-05-24T17:50:50 IST" name="addProductToCart" finished-at="2023-05-24T17:51:04 IST" duration-ms="14126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
-      </class> <!-- com.browserstack.environmenttest -->
-    </test> <!-- BStackDemo-0 -->
-    <test started-at="2023-05-24T17:50:12 IST" name="BStackDemo-2" finished-at="2023-05-24T17:51:09 IST" duration-ms="56675">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@2ff95fc6]" started-at="2023-05-24T17:50:12 IST" name="setUp" finished-at="2023-05-24T17:50:23 IST" duration-ms="10582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@2ff95fc6]" started-at="2023-05-24T17:50:23 IST" name="addProductToCart" finished-at="2023-05-24T17:50:36 IST" duration-ms="12784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@2ff95fc6]" started-at="2023-05-24T17:50:36 IST" name="tearDown" finished-at="2023-05-24T17:50:39 IST" duration-ms="2457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-      <class name="com.browserstack.environmenttest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@9d1a267]" started-at="2023-05-24T17:50:39 IST" name="setUp" finished-at="2023-05-24T17:50:53 IST" duration-ms="14276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@9d1a267]" started-at="2023-05-24T17:50:53 IST" name="addProductToCart" finished-at="2023-05-24T17:51:04 IST" duration-ms="11101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
       </class> <!-- com.browserstack.environmenttest -->
     </test> <!-- BStackDemo-2 -->
-    <test started-at="2023-05-24T17:50:12 IST" name="BStackDemo-1" finished-at="2023-05-24T17:51:43 IST" duration-ms="91091">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-24T17:50:12 IST" name="setUp" finished-at="2023-05-24T17:50:34 IST" duration-ms="22241" status="PASS">
+    <test started-at="2023-05-24T18:18:57 IST" name="BStackDemo-0" finished-at="2023-05-24T18:19:29 IST" duration-ms="32458">
+      <class name="com.browserstack.environmenttest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@6e106680]" started-at="2023-05-24T18:18:57 IST" name="setUp" finished-at="2023-05-24T18:19:12 IST" duration-ms="14914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-24T17:50:34 IST" name="addProductToCart" finished-at="2023-05-24T17:50:52 IST" duration-ms="17720" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@6e106680]" started-at="2023-05-24T18:19:12 IST" name="addProductToCart" finished-at="2023-05-24T18:19:24 IST" duration-ms="12501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-24T17:50:55 IST" name="tearDown" finished-at="2023-05-24T17:50:56 IST" duration-ms="1755" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.environmenttest@6e106680]" started-at="2023-05-24T18:19:27 IST" name="tearDown" finished-at="2023-05-24T18:19:29 IST" duration-ms="1836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
+      </class> <!-- com.browserstack.environmenttest -->
+    </test> <!-- BStackDemo-0 -->
+    <test started-at="2023-05-24T18:18:57 IST" name="BStackDemo-1" finished-at="2023-05-24T18:20:27 IST" duration-ms="89801">
       <class name="com.browserstack.environmenttest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@4d48bd85]" started-at="2023-05-24T17:50:56 IST" name="setUp" finished-at="2023-05-24T17:51:15 IST" duration-ms="18147" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.environmenttest@ec1b2e4]" started-at="2023-05-24T18:18:57 IST" name="setUp" finished-at="2023-05-24T18:19:16 IST" duration-ms="19622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@4d48bd85]" started-at="2023-05-24T17:51:15 IST" name="addProductToCart" finished-at="2023-05-24T17:51:38 IST" duration-ms="23596" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.environmenttest@ec1b2e4]" started-at="2023-05-24T18:19:16 IST" name="addProductToCart" finished-at="2023-05-24T18:20:22 IST" duration-ms="65275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.environmenttest@ec1b2e4]" started-at="2023-05-24T18:20:24 IST" name="tearDown" finished-at="2023-05-24T18:20:27 IST" duration-ms="2449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.environmenttest -->
     </test> <!-- BStackDemo-1 -->
   </suite> <!-- Cross-Platform -->
