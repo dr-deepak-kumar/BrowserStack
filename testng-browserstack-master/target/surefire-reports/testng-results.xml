@@ -1,206 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T15:26:39 IST" name="Cross-Platform" finished-at="2023-05-24T15:27:51 IST" duration-ms="72206">
+  <suite started-at="2023-05-24T15:51:23 IST" name="Cross-Platform" finished-at="2023-05-24T15:51:57 IST" duration-ms="34142">
     <groups>
     </groups>
-    <test started-at="2023-05-24T15:26:39 IST" name="BStackDemo-2" finished-at="2023-05-24T15:27:13 IST" duration-ms="34089">
+    <test started-at="2023-05-24T15:51:23 IST" name="BStackDemo-2" finished-at="2023-05-24T15:51:42 IST" duration-ms="19663">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:26:39 IST" name="setUp" finished-at="2023-05-24T15:26:48 IST" duration-ms="9631" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@4a0df195]" started-at="2023-05-24T15:51:23 IST" name="setUp" finished-at="2023-05-24T15:51:33 IST" duration-ms="9941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:26:48 IST" name="addProductToCart" finished-at="2023-05-24T15:26:56 IST" duration-ms="7867" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@4a0df195]" started-at="2023-05-24T15:51:33 IST" name="addProductToCart" finished-at="2023-05-24T15:51:39 IST" duration-ms="6736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:26:56 IST" name="tearDown" finished-at="2023-05-24T15:26:59 IST" duration-ms="2443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:26:59 IST" name="setUp" finished-at="2023-05-24T15:27:04 IST" duration-ms="5386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart1()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:27:04 IST" name="addProductToCart1" finished-at="2023-05-24T15:27:10 IST" duration-ms="5796" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [iPhone 12] but found [iPhone 12 Mini]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@4cbf4f53]" started-at="2023-05-24T15:27:10 IST" name="tearDown" finished-at="2023-05-24T15:27:13 IST" duration-ms="2431" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@4a0df195]" started-at="2023-05-24T15:51:40 IST" name="tearDown" finished-at="2023-05-24T15:51:42 IST" duration-ms="2656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.BStackDemoTest -->
     </test> <!-- BStackDemo-2 -->
-    <test started-at="2023-05-24T15:26:39 IST" name="BStackDemo-0" finished-at="2023-05-24T15:27:23 IST" duration-ms="44986">
+    <test started-at="2023-05-24T15:51:23 IST" name="BStackDemo-0" finished-at="2023-05-24T15:51:48 IST" duration-ms="24943">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:26:39 IST" name="setUp" finished-at="2023-05-24T15:26:47 IST" duration-ms="8512" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@20095ab4]" started-at="2023-05-24T15:51:23 IST" name="setUp" finished-at="2023-05-24T15:51:32 IST" duration-ms="8965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:26:47 IST" name="addProductToCart" finished-at="2023-05-24T15:26:58 IST" duration-ms="10780" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@20095ab4]" started-at="2023-05-24T15:51:32 IST" name="addProductToCart" finished-at="2023-05-24T15:51:43 IST" duration-ms="10733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:27:00 IST" name="tearDown" finished-at="2023-05-24T15:27:02 IST" duration-ms="2406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:27:02 IST" name="setUp" finished-at="2023-05-24T15:27:08 IST" duration-ms="5935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart1()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:27:08 IST" name="addProductToCart1" finished-at="2023-05-24T15:27:18 IST" duration-ms="9959" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [iPhone 12] but found [iPhone 12 Mini]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@5a8ba37c]" started-at="2023-05-24T15:27:21 IST" name="tearDown" finished-at="2023-05-24T15:27:23 IST" duration-ms="2921" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@20095ab4]" started-at="2023-05-24T15:51:45 IST" name="tearDown" finished-at="2023-05-24T15:51:48 IST" duration-ms="2491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.BStackDemoTest -->
     </test> <!-- BStackDemo-0 -->
-    <test started-at="2023-05-24T15:26:39 IST" name="BStackDemo-1" finished-at="2023-05-24T15:27:51 IST" duration-ms="72206">
+    <test started-at="2023-05-24T15:51:23 IST" name="BStackDemo-1" finished-at="2023-05-24T15:51:57 IST" duration-ms="34142">
       <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:26:39 IST" name="setUp" finished-at="2023-05-24T15:27:06 IST" duration-ms="27031" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@de88ac6]" started-at="2023-05-24T15:51:23 IST" name="setUp" finished-at="2023-05-24T15:51:36 IST" duration-ms="13516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:27:06 IST" name="addProductToCart" finished-at="2023-05-24T15:27:15 IST" duration-ms="9502" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@de88ac6]" started-at="2023-05-24T15:51:36 IST" name="addProductToCart" finished-at="2023-05-24T15:51:51 IST" duration-ms="14931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:27:18 IST" name="tearDown" finished-at="2023-05-24T15:27:20 IST" duration-ms="2220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:27:20 IST" name="setUp" finished-at="2023-05-24T15:27:35 IST" duration-ms="14214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart1()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:27:35 IST" name="addProductToCart1" finished-at="2023-05-24T15:27:46 IST" duration-ms="11344" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [iPhone 12] but found [iPhone 12 Mini]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [iPhone 12] but found [iPhone 12 Mini]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.browserstack.BStackDemoTest.addProductToCart1(BStackDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@6345e7b9]" started-at="2023-05-24T15:27:48 IST" name="tearDown" finished-at="2023-05-24T15:27:51 IST" duration-ms="2437" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@de88ac6]" started-at="2023-05-24T15:51:54 IST" name="tearDown" finished-at="2023-05-24T15:51:57 IST" duration-ms="2785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
