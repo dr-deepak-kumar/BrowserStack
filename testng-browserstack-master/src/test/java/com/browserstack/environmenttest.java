@@ -26,7 +26,7 @@ public class environmenttest {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", "Chrome");
-
+        capabilities.setCapability("build", buildName);
         HashMap<String, Object> browserstackOptions = new HashMap<>();
         browserstackOptions.put("os", "Windows");
         browserstackOptions.put("osVersion", "10");
