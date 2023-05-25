@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cross_Platform" class="navigator-link">
-              <span class="suite-name border-passed">Cross-Platform</span>
+              <span class="suite-name border-failed">Cross-Platform</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cross_Platform" class="hide-methods failed suite-Cross_Platform"> (hide)</a> <!-- hide-methods failed suite-Cross_Platform -->
+                      <a href="#" panel-name="suite-Cross_Platform" class="show-methods failed suite-Cross_Platform"> (show)</a> <!-- show-methods failed suite-Cross_Platform -->
+                    </span>
+                    <div class="method-list-content failed suite-Cross_Platform">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cross_Platform -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +118,27 @@
                     <div class="method-list-content passed suite-Cross_Platform">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.BStackDemoTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyProductSearchFunctionality">verifyProductSearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyProductSearchFunctionality">verifyProductSearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Platform" title="com.browserstack.Headsupfortails" class="method navigator-link" hash-for-method="verifyProductSearchFunctionality">verifyProductSearchFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Cross_Platform -->
@@ -129,31 +153,82 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cross_Platform" class="panel Cross_Platform">
-          <div class="suite-Cross_Platform-class-passed">
+          <div class="suite-Cross_Platform-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.browserstack.BStackDemoTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.browserstack.Headsupfortails</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addProductToCart">
-                  </a> <!-- addProductToCart -->
-                  <span class="method-name">addProductToCart</span>
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;DESKTOP-SS9KUUU&apos;, ip: &apos;192.168.1.178&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}
+Session ID: 2237b0d057dac7072270455b95611b46f46763c8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at com.browserstack.Headsupfortails.verifyHomepageTitle(Headsupfortails.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Platform-class-failed -->
+          <div class="suite-Cross_Platform-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.browserstack.Headsupfortails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addProductToCart">
-                  </a> <!-- addProductToCart -->
-                  <span class="method-name">addProductToCart</span>
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addProductToCart">
-                  </a> <!-- addProductToCart -->
-                  <span class="method-name">addProductToCart</span>
+                  <a name="verifyProductSearchFunctionality">
+                  </a> <!-- verifyProductSearchFunctionality -->
+                  <span class="method-name">verifyProductSearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductSearchFunctionality">
+                  </a> <!-- verifyProductSearchFunctionality -->
+                  <span class="method-name">verifyProductSearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductSearchFunctionality">
+                  </a> <!-- verifyProductSearchFunctionality -->
+                  <span class="method-name">verifyProductSearchFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,19 +246,19 @@
   &lt;test thread-count=&quot;3&quot; name=&quot;BStackDemo-0&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;0&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.browserstack.BStackDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.Headsupfortails&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BStackDemo-0 --&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;BStackDemo-1&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;1&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.browserstack.BStackDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.Headsupfortails&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BStackDemo-1 --&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;BStackDemo-2&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;2&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.browserstack.BStackDemoTest&quot;/&gt;
+      &lt;class name=&quot;com.browserstack.Headsupfortails&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BStackDemo-2 --&gt;
 &lt;/suite&gt; &lt;!-- Cross-Platform --&gt;
@@ -229,24 +304,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addProductToCart')
-data.setCell(0, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(0, 3, 6278);
+data.setCell(0, 1, 'verifyProductSearchFunctionality')
+data.setCell(0, 2, 'com.browserstack.Headsupfortails')
+data.setCell(0, 3, 14936);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addProductToCart')
-data.setCell(1, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(1, 3, 5718);
+data.setCell(1, 1, 'verifyProductSearchFunctionality')
+data.setCell(1, 2, 'com.browserstack.Headsupfortails')
+data.setCell(1, 3, 14584);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductToCart')
-data.setCell(2, 2, 'com.browserstack.BStackDemoTest')
-data.setCell(2, 3, 5005);
+data.setCell(2, 1, 'verifyProductSearchFunctionality')
+data.setCell(2, 2, 'com.browserstack.Headsupfortails')
+data.setCell(2, 3, 14308);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyHomepageTitle')
+data.setCell(3, 2, 'com.browserstack.Headsupfortails')
+data.setCell(3, 3, 10156);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyHomepageTitle')
+data.setCell(4, 2, 'com.browserstack.Headsupfortails')
+data.setCell(4, 3, 9513);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyHomepageTitle')
+data.setCell(5, 2, 'com.browserstack.Headsupfortails')
+data.setCell(5, 3, 8893);
 window.suiteTableData['Cross_Platform']= { tableData: data, tableDiv: 'times-div-Cross_Platform'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Cross_Platform">
               </div> <!-- times-div-Cross_Platform -->
             </div> <!-- times-div -->
@@ -272,7 +359,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.browserstack.BStackDemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.browserstack.Headsupfortails</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -286,28 +373,66 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addProductToCart</span>
-                <span class="method-start">8614 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">6910 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">addProductToCart</span>
-                <span class="method-start">9234 ms</span>
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">7927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">10690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14411 ms</span>
+                <span class="method-start">17821 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15581 ms</span>
+                <span class="method-start">18864 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20424 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23184 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addProductToCart</span>
-                <span class="method-start">16514 ms</span>
+                <span class="method-name">verifyProductSearchFunctionality</span>
+                <span class="method-start">25030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyProductSearchFunctionality</span>
+                <span class="method-start">25739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24166 ms</span>
+                <span class="method-start">40889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41088 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyProductSearchFunctionality</span>
+                <span class="method-start">46059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62275 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

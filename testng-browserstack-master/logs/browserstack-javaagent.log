@@ -161,3 +161,92 @@
 10:09:15.851 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/1a695d6dbbfabc27760a09a13721338611ce82a4
 10:09:15.852 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
 10:09:17.862 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:32:38.746 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:32:38.803 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:32:40.402 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:32:46.253 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+12:33:35.789 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/jfhoo2n9gjystmfzybbs2pvp1ruwu1y8aqims90b to view build report, insights, and many more debugging information all at one place!
+
+12:33:37.228 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/bd417d48d937e7dd38c766bb2611e2cdf3307b2b
+12:33:37.228 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:33:38.796 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:35:44.236 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:35:44.287 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:35:45.846 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:35:52.441 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+12:36:20.347 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/p3ljm2yexgzhglozebz4kkfke9hygnmgrwfxzipm to view build report, insights, and many more debugging information all at one place!
+
+12:36:21.678 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/55ca01ad06d5a2e82bd3c95a86d9135e611a5ce2
+12:36:21.679 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:36:23.379 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:38:08.382 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:38:08.439 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:38:10.227 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:38:15.748 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+12:38:19.775 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:39:57.558 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:39:57.617 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:39:59.191 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:40:05.114 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+12:42:49.543 [verifyPaymentOptions@1] ERROR c.browserstack.utils.UtilityMethods - Mark Session Name failed - org.openqa.selenium.WebDriverException: Error executing browserstack_executor command. Something went wrong
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1f6f81a1ebafd76c5cea8e0b6b14b546c24bbfb, executeScript {script=browserstack_executor: {"action":"setSessionName","arguments":{"name":"com.browserstack.Headsupfortails-verifyProductSearchFunctionality"}}, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:processID: 708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: b1f6f81a1ebafd76c5cea8e0b6b...}
+Session ID: b1f6f81a1ebafd76c5cea8e0b6b14b546c24bbfb
+12:43:05.739 [verifyProductSearchFunctionality@1] ERROR c.browserstack.utils.UtilityMethods - Mark Session Name failed - org.openqa.selenium.WebDriverException: Error executing browserstack_executor command. Something went wrong
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1f6f81a1ebafd76c5cea8e0b6b14b546c24bbfb, executeScript {script=browserstack_executor: {"action":"setSessionName","arguments":{"name":"com.browserstack.Headsupfortails-verifyUserAccountFunctionality"}}, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 102.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:processID: 708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: b1f6f81a1ebafd76c5cea8e0b6b...}
+Session ID: b1f6f81a1ebafd76c5cea8e0b6b14b546c24bbfb
+12:44:03.511 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/iimnzuuaxetita8tpi9phd9mnltomcqw4ji79fho to view build report, insights, and many more debugging information all at one place!
+
+12:44:06.134 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:46:47.416 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:46:47.474 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:46:49.228 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:46:55.087 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+12:51:31.480 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/ybmmrozdog03pp86fbehnl8i2ub7ciljzmsyjhgs to view build report, insights, and many more debugging information all at one place!
+
+12:51:34.382 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+12:51:34.968 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/c2a84e5a4e7126a3aa577cf62cca9df092e87aff
+12:51:34.968 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:55:45.970 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:55:46.032 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:55:47.700 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:55:54.189 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:02:18.144 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/pobd3vcf1qniecyic9yp5bp5znrxkjhhxm6oknao to view build report, insights, and many more debugging information all at one place!
+
+13:02:19.579 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/3bd47efc02905e4bf1933e3a24999c3bbcf9336e
+13:02:19.580 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:02:21.081 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+13:04:59.543 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:04:59.604 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:05:01.011 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:05:06.887 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:05:42.742 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/7kgy13puyttww23xsi8ho13gjapnrlkudzyhyy5q to view build report, insights, and many more debugging information all at one place!
+
+13:05:43.979 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/972bf99b34a52ae0ea8f71963d4285fc4c25743b
+13:05:43.979 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:05:45.181 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+13:16:01.807 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:16:01.869 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:16:03.394 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:16:09.588 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:17:42.102 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/oy3km6zok9ayr9zbomrlfn3psxp5edumsc7pigx2 to view build report, insights, and many more debugging information all at one place!
+
+13:17:43.328 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/5d5922d80442ad0bae9e9427129a065ace1ac433
+13:17:43.328 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:17:45.053 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+13:27:16.952 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:27:17.010 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:27:18.609 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:27:24.965 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:28:31.333 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/lkyfbv9dxiehfuv7ziyse8bxl2i1sdim7gvc2b3v to view build report, insights, and many more debugging information all at one place!
+
+13:28:32.644 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/010e084313592d8f07e41a6a7e842ec2b6cc51aa
+13:28:32.644 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:28:34.220 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.

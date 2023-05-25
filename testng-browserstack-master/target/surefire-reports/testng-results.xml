@@ -1,57 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T10:08:47 IST" name="Cross-Platform" finished-at="2023-05-25T10:09:13 IST" duration-ms="26781">
+  <suite started-at="2023-05-25T13:27:26 IST" name="Cross-Platform" finished-at="2023-05-25T13:28:30 IST" duration-ms="64148">
     <groups>
     </groups>
-    <test started-at="2023-05-25T10:08:47 IST" name="BStackDemo-2" finished-at="2023-05-25T10:09:03 IST" duration-ms="16586">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-25T10:08:47 IST" name="setUp" finished-at="2023-05-25T10:08:56 IST" duration-ms="9234" status="PASS">
+    <test started-at="2023-05-25T13:27:26 IST" name="BStackDemo-0" finished-at="2023-05-25T13:28:09 IST" duration-ms="42985">
+      <class name="com.browserstack.Headsupfortails">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:27:26 IST" name="setUp" finished-at="2023-05-25T13:27:33 IST" duration-ms="6909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-25T10:08:56 IST" name="addProductToCart" finished-at="2023-05-25T10:09:01 IST" duration-ms="5005" status="PASS">
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:27:33 IST" name="verifyHomepageTitle" finished-at="2023-05-25T13:27:43 IST" duration-ms="10156" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}
+Session ID: 2237b0d057dac7072270455b95611b46f46763c8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}
+Session ID: 2237b0d057dac7072270455b95611b46f46763c8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+at com.browserstack.Headsupfortails.verifyHomepageTitle(Headsupfortails.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@15dd5ac2]" started-at="2023-05-25T10:09:01 IST" name="tearDown" finished-at="2023-05-25T10:09:03 IST" duration-ms="2071" status="PASS">
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:27:45 IST" name="tearDown" finished-at="2023-05-25T13:27:47 IST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
-    </test> <!-- BStackDemo-2 -->
-    <test started-at="2023-05-25T10:08:47 IST" name="BStackDemo-0" finished-at="2023-05-25T10:09:05 IST" duration-ms="17981">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-25T10:08:47 IST" name="setUp" finished-at="2023-05-25T10:08:55 IST" duration-ms="8614" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:27:47 IST" name="setUp" finished-at="2023-05-25T13:27:51 IST" duration-ms="4606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-25T10:08:55 IST" name="addProductToCart" finished-at="2023-05-25T10:09:01 IST" duration-ms="5718" status="PASS">
+        <test-method signature="verifyProductSearchFunctionality()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:27:51 IST" name="verifyProductSearchFunctionality" finished-at="2023-05-25T13:28:06 IST" duration-ms="14308" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@159a48a6]" started-at="2023-05-25T10:09:02 IST" name="tearDown" finished-at="2023-05-25T10:09:05 IST" duration-ms="2301" status="PASS">
+        </test-method> <!-- verifyProductSearchFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@32b9bd12]" started-at="2023-05-25T13:28:07 IST" name="tearDown" finished-at="2023-05-25T13:28:09 IST" duration-ms="2036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
+      </class> <!-- com.browserstack.Headsupfortails -->
     </test> <!-- BStackDemo-0 -->
-    <test started-at="2023-05-25T10:08:47 IST" name="BStackDemo-1" finished-at="2023-05-25T10:09:13 IST" duration-ms="26781">
-      <class name="com.browserstack.BStackDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.BStackDemoTest@4e904fd5]" started-at="2023-05-25T10:08:47 IST" name="setUp" finished-at="2023-05-25T10:09:03 IST" duration-ms="16513" status="PASS">
+    <test started-at="2023-05-25T13:27:26 IST" name="BStackDemo-2" finished-at="2023-05-25T13:28:09 IST" duration-ms="43096">
+      <class name="com.browserstack.Headsupfortails">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:27:26 IST" name="setUp" finished-at="2023-05-25T13:27:34 IST" duration-ms="7927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:com.browserstack.BStackDemoTest@4e904fd5]" started-at="2023-05-25T10:09:03 IST" name="addProductToCart" finished-at="2023-05-25T10:09:09 IST" duration-ms="6278" status="PASS">
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:27:34 IST" name="verifyHomepageTitle" finished-at="2023-05-25T13:27:44 IST" duration-ms="9513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.BStackDemoTest@4e904fd5]" started-at="2023-05-25T10:09:11 IST" name="tearDown" finished-at="2023-05-25T10:09:13 IST" duration-ms="2516" status="PASS">
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:27:44 IST" name="tearDown" finished-at="2023-05-25T13:27:46 IST" duration-ms="1573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.BStackDemoTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:27:46 IST" name="setUp" finished-at="2023-05-25T13:27:52 IST" duration-ms="6313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductSearchFunctionality()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:27:52 IST" name="verifyProductSearchFunctionality" finished-at="2023-05-25T13:28:07 IST" duration-ms="14936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearchFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@4d48bd85]" started-at="2023-05-25T13:28:07 IST" name="tearDown" finished-at="2023-05-25T13:28:09 IST" duration-ms="1947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.Headsupfortails -->
+    </test> <!-- BStackDemo-2 -->
+    <test started-at="2023-05-25T13:27:26 IST" name="BStackDemo-1" finished-at="2023-05-25T13:28:30 IST" duration-ms="64148">
+      <class name="com.browserstack.Headsupfortails">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:27:26 IST" name="setUp" finished-at="2023-05-25T13:27:37 IST" duration-ms="10689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:27:37 IST" name="verifyHomepageTitle" finished-at="2023-05-25T13:27:46 IST" duration-ms="8893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:27:48 IST" name="tearDown" finished-at="2023-05-25T13:27:49 IST" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:27:49 IST" name="setUp" finished-at="2023-05-25T13:28:12 IST" duration-ms="22875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductSearchFunctionality()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:28:12 IST" name="verifyProductSearchFunctionality" finished-at="2023-05-25T13:28:27 IST" duration-ms="14584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearchFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.Headsupfortails@b18c4]" started-at="2023-05-25T13:28:28 IST" name="tearDown" finished-at="2023-05-25T13:28:30 IST" duration-ms="1829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.Headsupfortails -->
     </test> <!-- BStackDemo-1 -->
   </suite> <!-- Cross-Platform -->
 </testng-results>
