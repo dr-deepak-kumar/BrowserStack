@@ -250,3 +250,19 @@ Session ID: b1f6f81a1ebafd76c5cea8e0b6b14b546c24bbfb
 13:28:32.644 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/010e084313592d8f07e41a6a7e842ec2b6cc51aa
 13:28:32.644 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
 13:28:34.220 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+10:15:44.568 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:15:44.616 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+10:15:45.895 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+10:15:52.027 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+10:15:59.014 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/wgih8zwskztpybfdphc7vvuilmz1zge6a0t6qmhk to view build report, insights, and many more debugging information all at one place!
+
+10:16:01.319 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.
+10:20:19.522 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:20:19.575 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+10:20:20.788 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+10:20:26.051 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+10:21:46.059 [main] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/lwaxy54in8c90oco8elyst6ag4u9tlanvequwov3 to view build report, insights, and many more debugging information all at one place!
+
+10:21:47.109 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/ab87246f84c3df82f54d686f13fc49b2fa5c6e9c
+10:21:47.109 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:21:48.302 [Thread-1] INFO  com.browserstack.LocalFactory - BrowserStack Local Stopped Successfully.

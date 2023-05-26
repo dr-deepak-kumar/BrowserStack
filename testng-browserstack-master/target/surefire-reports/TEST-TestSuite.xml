@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="65.044" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="79.009" tests="10" errors="0" skipped="0" failures="2">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 11"/>
-    <property name="classworlds.conf" value="D:\HUFT\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf11618816919749637088.tmp"/>
+    <property name="classworlds.conf" value="D:\HUFT\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10152676698075866182.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\huft\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/huft/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin/server;C:/Users/huft/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jre-1.8\bin;C:\Windows\System32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -57,25 +57,42 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-17.0.7+7"/>
-    <property name="m2e.build.project.data.socket.port" value="51403"/>
+    <property name="m2e.build.project.data.socket.port" value="56683"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="5.196"/>
-  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="6.239">
-    <failure message="unknown error: unexpected command response&#10;  (Session info: chrome=103.0.5060.114)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;DESKTOP-SS9KUUU&apos;, ip: &apos;192.168.1.178&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}&#10;Session ID: 2237b0d057dac7072270455b95611b46f46763c8" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.114)
+  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="1.098"/>
+  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="0.913"/>
+  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="2.687"/>
+  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="4.617"/>
+  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="2.338"/>
+  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="5.089">
+    <failure message="element not interactable&#10;  (Session info: chrome=111.0.5563.115)&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;DESKTOP-SS9KUUU&apos;, ip: &apos;192.168.1.178&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [68a0d19cf28c7bbb4a809ed640b2a04f00a77510, sendKeysToElement {id=bb5486f4-d698-4f69-b636-18d3c5f26d60, value=[Ljava.lang.CharSequence;@57c89231}]&#10;Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverPort: 18083, databaseEnabled: false, desired: {browserName: chrome, chromedriverPort: 18083, deviceName: android, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8203, udid: R5CRC1WYPFE}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G991B, deviceName: R5CRC1WYPFE, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: R5CRC1WYPFE, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=&lt;-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 11, skipServerInstallation: true, statBarHeight: 79, systemPort: 8203, takesScreenshot: true, udid: R5CRC1WYPFE, viewportRect: {height: 2097, left: 0, top: 79, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Element: [[ChromeDriver: chrome on LINUX (68a0d19cf28c7bbb4a809ed640b2a04f00a77510)] -&gt; xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]&#10;Session ID: 68a0d19cf28c7bbb4a809ed640b2a04f00a77510" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=111.0.5563.115)
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}
-Session ID: 2237b0d057dac7072270455b95611b46f46763c8
-	at com.browserstack.Headsupfortails.verifyHomepageTitle(Headsupfortails.java:20)
+Command: [68a0d19cf28c7bbb4a809ed640b2a04f00a77510, sendKeysToElement {id=bb5486f4-d698-4f69-b636-18d3c5f26d60, value=[Ljava.lang.CharSequence;@57c89231}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverPort: 18083, databaseEnabled: false, desired: {browserName: chrome, chromedriverPort: 18083, deviceName: android, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8203, udid: R5CRC1WYPFE}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G991B, deviceName: R5CRC1WYPFE, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: R5CRC1WYPFE, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 11, skipServerInstallation: true, statBarHeight: 79, systemPort: 8203, takesScreenshot: true, udid: R5CRC1WYPFE, viewportRect: {height: 2097, left: 0, top: 79, width: 1080}, warnings: {}, webStorageEnabled: false}
+Element: [[ChromeDriver: chrome on LINUX (68a0d19cf28c7bbb4a809ed640b2a04f00a77510)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
+Session ID: 68a0d19cf28c7bbb4a809ed640b2a04f00a77510
+	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
+]]></failure>
+  </testcase>
+  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="0.515"/>
+  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="4.001"/>
+  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="5.401">
+    <failure message="Element is not currently visible and may not be manipulated&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;DESKTOP-SS9KUUU&apos;, ip: &apos;192.168.1.178&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7daaa77024457fc9557bbb02315212ea39eeb955, sendKeysToElement {id=5000, value=[Ljava.lang.CharSequence;@130280db}]&#10;Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 12, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008101-000615C114D2001E, useXctestrunFile: true, webStorageEnabled: false}&#10;Element: [[ChromeDriver: safari on MAC (7daaa77024457fc9557bbb02315212ea39eeb955)] -&gt; xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]&#10;Session ID: 7daaa77024457fc9557bbb02315212ea39eeb955" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Element is not currently visible and may not be manipulated
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7daaa77024457fc9557bbb02315212ea39eeb955, sendKeysToElement {id=5000, value=[Ljava.lang.CharSequence;@130280db}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 12, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008101-000615C114D2001E, useXctestrunFile: true, webStorageEnabled: false}
+Element: [[ChromeDriver: safari on MAC (7daaa77024457fc9557bbb02315212ea39eeb955)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
+Session ID: 7daaa77024457fc9557bbb02315212ea39eeb955
+	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
 </failure>
   </testcase>
-  <testcase name="verifyHomepageTitle" classname="com.browserstack.Headsupfortails" time="8.801"/>
-  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="14.039"/>
-  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="14.238"/>
-  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="14.487"/>
+  <testcase name="verifyProductSearchFunctionality" classname="com.browserstack.Headsupfortails" time="22.581"/>
 </testsuite>

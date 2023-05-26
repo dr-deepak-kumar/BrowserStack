@@ -42,7 +42,15 @@ platforms:
     osVersion: Big Sur
     browserName: Safari
     browserVersion: 14.1
-    
+  - device: "iPhone 12"
+    browser: "safari"
+    os: "ios"
+    os_version: "14.0"
+
+  - device: "Samsung Galaxy S21"
+    browser: "chrome"
+    os: "android"
+    os_version: "11.0"
 # =======================
 # Parallels per Platform
 # =======================

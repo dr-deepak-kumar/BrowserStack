@@ -1,16 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.044 sec <<< FAILURE! - in TestSuite
-verifyHomepageTitle(com.browserstack.Headsupfortails)  Time elapsed: 6.239 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.114)
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 79.009 sec <<< FAILURE! - in TestSuite
+verifyProductSearchFunctionality(com.browserstack.Headsupfortails)  Time elapsed: 5.089 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=111.0.5563.115)
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2237b0d057dac7072270455b95611b46f46763c8, get {url=https://www.headsupfortails.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:5477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2237b0d057dac7072270455b956...}
-Session ID: 2237b0d057dac7072270455b95611b46f46763c8
-	at com.browserstack.Headsupfortails.verifyHomepageTitle(Headsupfortails.java:20)
+Command: [68a0d19cf28c7bbb4a809ed640b2a04f00a77510, sendKeysToElement {id=bb5486f4-d698-4f69-b636-18d3c5f26d60, value=[Ljava.lang.CharSequence;@57c89231}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverPort: 18083, databaseEnabled: false, desired: {browserName: chrome, chromedriverPort: 18083, deviceName: android, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8203, udid: R5CRC1WYPFE}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G991B, deviceName: R5CRC1WYPFE, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: R5CRC1WYPFE, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 11, skipServerInstallation: true, statBarHeight: 79, systemPort: 8203, takesScreenshot: true, udid: R5CRC1WYPFE, viewportRect: {height: 2097, left: 0, top: 79, width: 1080}, warnings: {}, webStorageEnabled: false}
+Element: [[ChromeDriver: chrome on LINUX (68a0d19cf28c7bbb4a809ed640b2a04f00a77510)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
+Session ID: 68a0d19cf28c7bbb4a809ed640b2a04f00a77510
+	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
+
+verifyProductSearchFunctionality(com.browserstack.Headsupfortails)  Time elapsed: 5.401 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Element is not currently visible and may not be manipulated
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7daaa77024457fc9557bbb02315212ea39eeb955, sendKeysToElement {id=5000, value=[Ljava.lang.CharSequence;@130280db}]
+Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 12, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008101-000615C114D2001E, useXctestrunFile: true, webStorageEnabled: false}
+Element: [[ChromeDriver: safari on MAC (7daaa77024457fc9557bbb02315212ea39eeb955)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
+Session ID: 7daaa77024457fc9557bbb02315212ea39eeb955
+	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
 
