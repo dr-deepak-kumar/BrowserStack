@@ -14,6 +14,8 @@ public class SeleniumTest {
     public void setUp() throws Exception {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
+        options.addArguments("--disable-notifications");
+        
         driver = new ChromeDriver(options);
     }
 

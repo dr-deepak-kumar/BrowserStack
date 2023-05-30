@@ -3,7 +3,7 @@
 <suite name="Cross-Platform">
     <test name="BStackDemo">
         <classes>
-            <class name="com.browserstack.Headsupfortails"/> 
+            <class name="com.browserstack.staticpages"/> 
         </classes>
     </test>
 </suite>

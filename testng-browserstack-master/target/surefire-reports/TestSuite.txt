@@ -1,29 +1,731 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 79.009 sec <<< FAILURE! - in TestSuite
-verifyProductSearchFunctionality(com.browserstack.Headsupfortails)  Time elapsed: 5.089 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=111.0.5563.115)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Tests run: 232, Failures: 79, Errors: 0, Skipped: 95, Time elapsed: 508.199 sec <<< FAILURE! - in TestSuite
+setUp(com.browserstack.staticpages)  Time elapsed: 3.364 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [68a0d19cf28c7bbb4a809ed640b2a04f00a77510, sendKeysToElement {id=bb5486f4-d698-4f69-b636-18d3c5f26d60, value=[Ljava.lang.CharSequence;@57c89231}]
-Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverPort: 18083, databaseEnabled: false, desired: {browserName: chrome, chromedriverPort: 18083, deviceName: android, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8203, udid: R5CRC1WYPFE}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G991B, deviceName: R5CRC1WYPFE, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: R5CRC1WYPFE, goog:chromeOptions: {args: [start-maximized, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: LINUX, platformVersion: 11, skipServerInstallation: true, statBarHeight: 79, systemPort: 8203, takesScreenshot: true, udid: R5CRC1WYPFE, viewportRect: {height: 2097, left: 0, top: 79, width: 1080}, warnings: {}, webStorageEnabled: false}
-Element: [[ChromeDriver: chrome on LINUX (68a0d19cf28c7bbb4a809ed640b2a04f00a77510)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
-Session ID: 68a0d19cf28c7bbb4a809ed640b2a04f00a77510
-	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
 
-verifyProductSearchFunctionality(com.browserstack.Headsupfortails)  Time elapsed: 5.401 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Element is not currently visible and may not be manipulated
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+huftreward(com.browserstack.staticpages)  Time elapsed: 2.1 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='https://headsupfortails.com/pages/huft-rewards']//p//picture//img[@loading='lazy']"}
+  (Session info: chrome=113.0.5672.64)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7daaa77024457fc9557bbb02315212ea39eeb955, sendKeysToElement {id=5000, value=[Ljava.lang.CharSequence;@130280db}]
-Capabilities {automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: safari, browserVersion: null, browserstack.isTargetBased: true, databaseEnabled: false, deviceName: iPhone 12, deviceOrientation: PORTRAIT, javascriptEnabled: true, keychainPassword: [REDACTED VALUE], keychainPath: [REDACTED VALUE], locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 0, noReset: true, orientation: PORTRAIT, platform: MAC, platformName: MAC, realMobile: true, safariIgnoreFraudWarning: true, takesScreenshot: true, udid: 00008101-000615C114D2001E, useXctestrunFile: true, webStorageEnabled: false}
-Element: [[ChromeDriver: safari on MAC (7daaa77024457fc9557bbb02315212ea39eeb955)] -> xpath: /html[1]/body[1]/div[4]/div[1]/header[1]/div[1]/div[1]/div[3]/div[2]/input[1]]
-Session ID: 7daaa77024457fc9557bbb02315212ea39eeb955
-	at com.browserstack.Headsupfortails.verifyProductSearchFunctionality(Headsupfortails.java:29)
+Command: [511b88b15af71418e5706933d85a2399f2e6dd43, findElement {using=xpath, value=//a[@href='https://headsupfortails.com/pages/huft-rewards']//p//picture//img[@loading='lazy']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:3116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 511b88b15af71418e5706933d85...}
+Session ID: 511b88b15af71418e5706933d85a2399f2e6dd43
+	at com.browserstack.staticpages.huftreward(staticpages.java:27)
+
+huftreward(com.browserstack.staticpages)  Time elapsed: 0.916 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='https://headsupfortails.com/pages/huft-rewards']//p//picture//img[@loading='lazy']"}
+  (Session info: chrome=111.0.5563.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85fde57cad15fa1733f7ce29614aa06776d94250, findElement {using=xpath, value=//a[@href='https://headsupfortails.com/pages/huft-rewards']//p//picture//img[@loading='lazy']}]
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverPort: 18082, databaseEnabled: false, desired: {browserName: chrome, chromedriverPort: 18082, deviceName: android, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, newCommandTimeout: 0, platformName: Android, skipServerInstallation: true, systemPort: 8202, udid: R5CRC1WXVRL}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-G991B, deviceName: R5CRC1WXVRL, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: R5CRC1WXVRL, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications, --proxy-bypass-list=<-loopb..., test-type, --proxy-server=http://103.2..., --disable-features=Translate]}, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, pixelRatio: 3, platform: LINUX, platformName: ANDROID, platformVersion: 11, skipServerInstallation: true, statBarHeight: 79, systemPort: 8202, takesScreenshot: true, udid: R5CRC1WXVRL, viewportRect: {height: 2097, left: 0, top: 79, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 85fde57cad15fa1733f7ce29614aa06776d94250
+	at com.browserstack.staticpages.huftreward(staticpages.java:27)
+
+setUp(com.browserstack.staticpages)  Time elapsed: 8.085 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Caused by: org.openqa.selenium.WebDriverException: 
+Automate testing time expired.
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.249 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.533 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.217 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.116 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.072 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.398 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.213 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.966 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.95 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.131 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.319 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.416 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.898 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.798 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.155 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.166 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.516 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.812 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.786 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.126 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.14 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.677 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.744 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.755 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.094 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.152 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.688 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.734 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.721 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.299 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.947 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.78 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.681 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.673 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.343 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.895 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.851 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.734 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.771 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.152 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.432 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Caused by: org.openqa.selenium.WebDriverException: 
+Automate testing time expired.
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.802 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Caused by: org.openqa.selenium.WebDriverException: 
+Automate testing time expired.
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.374 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Safari, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Safari, browserName: Safari, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: OS X, osVersion: Big Sur, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.692 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.173 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.286 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.901 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.288 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.033 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.61 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.944 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.19 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.365 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.914 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.117 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Chrome, browserName: Chrome, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.031 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.287 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.989 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.118 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.358 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 0.951 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: chrome, browserName: chrome, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: Samsung Galaxy S21, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: android, osVersion: 11.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.105 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.316 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 3.412 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.416 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 3.549 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.325 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 3.594 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 1.34 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari, browserVersion: null, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: safari, browserName: safari, browserVersion: null, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, deviceName: iPhone 12, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: ios, osVersion: 14.0, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 2.929 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Caused by: org.openqa.selenium.WebDriverException: 
+Automate testing time expired.
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 
+
+setUp(com.browserstack.staticpages)  Time elapsed: 4.849 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 4.901 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 4.947 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
+
+setUp(com.browserstack.staticpages)  Time elapsed: 4.923 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Handshake response does not match any supported protocol 
+Host info: host: 'DESKTOP-SS9KUUU', ip: '192.168.1.178'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Firefox, browserVersion: latest, bstack:options: {accessKey: twqxQydQD82kykCXeAwz, browser: Firefox, browserName: Firefox, browserVersion: latest, browserstackSDK: testng-javaagent/1.5.2, buildIdentifier: #58, buildName: jenkins_BrowserStack-, consoleLogs: errors, debug: false, hostName: DESKTOP-SS9KUUU, local: true, localIdentifier: 30_May_1127_DESKTOP_SS9KUUU..., networkLogs: false, os: Windows, osVersion: 10, projectName: BrowserStack Samples, source: testng:sample-master:v1.1, userName: deepakkumar_rQ89ol}, goog:chromeOptions: {args: [--remote-allow-origins=*, start-maximized, --disable-notifications], extensions: []}}]}]
 
